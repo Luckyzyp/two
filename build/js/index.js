@@ -1,1 +1,1 @@
-$(function(){$("input").on("input",function(){var n=$("input").val();$.ajax({url:"/api/data.json?val="+n,dataType:"json",success:function(n){console.log(n)}})})});
+$(function(){$("input").on("input",function(){var a=$("input").val();$.ajax({url:"/api/datajson?val="+a,dataType:"json",success:function(a){var n="";a.data.forEach(function(a){n+="<li>"+a+"</li>"}),$(".list").html(n)}})})});
