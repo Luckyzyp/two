@@ -1,0 +1,1 @@
+$(function(){$("input").on("input",function(){var n=$("input").val();$.ajax({url:"/api/data.json?val="+n,dataType:"json",success:function(n){console.log(n)}})})});
